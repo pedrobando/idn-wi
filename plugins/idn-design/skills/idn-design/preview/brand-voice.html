@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- @dsCard group="Brand" name="Voice & Tone" subtitle="Sounds like IDN vs. not" viewport="700x270" -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .col h4 { font-family: var(--font-slab); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 9px; }
+  .say h4 { color: var(--success); }
+  .dont h4 { color: var(--danger); }
+  .col p { font-size: 12.5px; line-height: 1.45; margin: 0 0 8px; color: var(--slate); padding-left: 16px; position: relative; }
+  .col p::before { position:absolute; left:0; top:0; font-weight:700; }
+  .say p::before { content:"✓"; color: var(--success); }
+  .dont p::before { content:"✕"; color: var(--danger); }
+  .dont p { color: var(--gray); }
+  .tag { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--ink); margin: 0 0 4px; letter-spacing: -0.01em; }
+  .tag .pri { color: var(--idn-blue); }
+  .sub { font-size: 11px; color: var(--gray); margin: 0 0 16px; }
+</style></head>
+<body><div class="card">
+  <p class="card-eyebrow">Brand · Voice — confident, plain, accountable</p>
+  <p class="tag">We manage your IT, <span class="pri">so you can manage your business.</span></p>
+  <p class="sub">You = the client gets the benefit · We = our team carries the load. Sentence case. No emoji.</p>
+  <div class="grid">
+    <div class="col say">
+      <h4>Sounds like IDN</h4>
+      <p>Managed IT for businesses that can't afford downtime.</p>
+      <p>Call a real person in Racine. We pick up.</p>
+      <p>Veteran-owned. Minority-owned. Built here since 2004.</p>
+    </div>
+    <div class="col dont">
+      <h4>Not IDN</h4>
+      <p>Leverage next-gen synergies for world-class outcomes.</p>
+      <p>Our platform empowers seamless digital transformation.</p>
+      <p>IT ninjas delivering cutting-edge solutions 🚀</p>
+    </div>
+  </div>
+</div></body></html>

@@ -1,0 +1,229 @@
+/* ============================================================
+   IDN — Innovative Dynamic Networks
+   Colors & Type foundations
+   "We Manage Your IT, So You Can Manage Your Business."
+   ------------------------------------------------------------
+   Load this file anywhere you need the brand tokens. Fonts are
+   self-hosted in /fonts (variable woff2). Google Fonts @import
+   is kept as a network fallback.
+   ============================================================ */
+
+/* ---- Network fallback (self-hosted faces below take priority) ---- */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400..700&family=Roboto+Slab:wght@400..700&display=swap');
+
+/* ---- Self-hosted variable fonts ---- */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('fonts/Cabin-var.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('fonts/RobotoSlab-var.woff2') format('woff2');
+}
+
+:root {
+  /* ========================================================
+     1. BRAND PALETTE — pulled from the IDN mark
+     ======================================================== */
+
+  /* Blue family (primary brand — the leaping figure) */
+  --idn-blue:      #1567A8;   /* Primary action — buttons, links, key data */
+  --idn-blue-700:  #0E4E82;   /* Deep blue — hover, pressed, gradients     */
+  --idn-blue-300:  #2E8BD0;   /* Signal blue — bright highlight, the mark  */
+  --idn-blue-100:  #E7F1F9;   /* Blue tint — soft fills, selected rows     */
+
+  /* Sky family (secondary accent — a brighter azure, stays in the blue spectrum) */
+  --idn-sky:      #2293E0;   /* Brand sky — accents, secondary emphasis  */
+  --idn-sky-700:  #1A6BAA;   /* Deep sky — secondary buttons, hover      */
+  --idn-sky-300:  #7AC0EE;   /* Bright sky — accents on navy, charts     */
+  --idn-sky-100:  #E5F2FC;   /* Sky tint — badges, callout backgrounds   */
+
+  /* Navy / ink (authority, text, dark surfaces) */
+  --ink:           #13293A;   /* Darkest navy — primary text, dark sections*/
+  --slate:         #223645;   /* Slate navy — headings on light, surfaces  */
+
+  /* Neutrals (warm-cool, never flat IT gray) */
+  --gray:          #5E6B73;   /* Muted text, captions                      */
+  --mist:          #B5C5D0;   /* Hairlines on dark, disabled, dividers     */
+  --line:          #E4E9ED;   /* Borders, table rules                      */
+  --cloud:         #F4F7F9;   /* Page surface, cards-on-page, fills        */
+  --white:         #FFFFFF;
+
+  /* ========================================================
+     2. SEMANTIC / STATUS
+     ======================================================== */
+  --success:       #1F9D57;   /* Up / resolved / online                    */
+  --success-100:   #E4F4EB;
+  --warning:       #E0A030;   /* Attention / SLA nearing                   */
+  --warning-100:   #FBF1DD;
+  --danger:        #CF4334;   /* Down / critical / breach                  */
+  --danger-100:    #FBE7E5;
+  --info:          var(--idn-blue);
+
+  /* ========================================================
+     3. SEMANTIC SURFACE / TEXT ROLES
+     ======================================================== */
+  --bg:            var(--white);
+  --bg-subtle:     var(--cloud);
+  --bg-inverse:    var(--ink);
+
+  --fg1:           var(--slate);   /* primary text on light            */
+  --fg2:           var(--gray);    /* secondary / muted text           */
+  --fg3:           #8A97A0;        /* tertiary / placeholder           */
+  --fg-on-dark:    #EAF1F6;        /* primary text on navy             */
+  --fg-on-dark-2:  var(--mist);    /* secondary text on navy           */
+
+  --accent:        var(--idn-blue);
+  --accent-2:      var(--idn-sky);
+  --border:        var(--line);
+  --border-strong: var(--mist);
+
+  /* ========================================================
+     4. TYPE FAMILIES
+     ======================================================== */
+  --font-display: 'Cabin', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-body:    'Cabin', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-slab:    'Roboto Slab', Georgia, 'Times New Roman', serif;  /* overlines, labels, numerics */
+
+  /* ========================================================
+     5. TYPE SCALE  (px — tuned for screen UI & marketing)
+     ======================================================== */
+  --t-display-1: 46px;
+  --t-display-2: 34px;
+  --t-h1: 30px;
+  --t-h2: 24px;
+  --t-h3: 19px;
+  --t-h4: 16px;
+  --t-body-lg: 18px;
+  --t-body: 16px;
+  --t-body-sm: 14px;
+  --t-caption: 13px;
+  --t-overline: 11px;
+
+  --lh-tight: 1.05;
+  --lh-snug: 1.25;
+  --lh-body: 1.6;
+
+  --w-regular: 400;
+  --w-medium: 500;
+  --w-semibold: 600;
+  --w-bold: 700;
+
+  --track-display: -0.025em;
+  --track-heading: -0.015em;
+  --track-overline: 0.18em;
+
+  /* ========================================================
+     6. RADII / SHADOW / SPACING  (see VISUAL FOUNDATIONS)
+     ======================================================== */
+  --r-xs: 4px;
+  --r-sm: 6px;     /* buttons, inputs, badges-square */
+  --r-md: 10px;    /* cards, panels */
+  --r-lg: 16px;    /* feature cards, modals */
+  --r-pill: 999px;
+
+  --shadow-xs: 0 1px 2px rgba(19,41,58,0.06);
+  --shadow-sm: 0 1px 3px rgba(19,41,58,0.08), 0 1px 2px rgba(19,41,58,0.05);
+  --shadow-md: 0 6px 18px rgba(19,41,58,0.10);
+  --shadow-lg: 0 16px 40px rgba(14,62,98,0.16);
+  --shadow-focus: 0 0 0 3px rgba(46,139,208,0.35);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  --gradient-brand: linear-gradient(135deg, var(--idn-blue-300) 0%, var(--idn-blue) 45%, var(--idn-blue-700) 100%);
+  --gradient-sky:  linear-gradient(135deg, var(--idn-sky-300) 0%, var(--idn-sky) 50%, var(--idn-sky-700) 100%);
+  --gradient-ink:   linear-gradient(160deg, #1B3A52 0%, var(--ink) 70%);
+}
+
+/* ============================================================
+   7. SEMANTIC ELEMENT DEFAULTS  (opt-in via the .idn scope or
+   apply to the document root in brand pages)
+   ============================================================ */
+.idn, .idn-scope {
+  font-family: var(--font-body);
+  color: var(--fg1);
+  background: var(--bg);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.idn h1, .idn-h1 {
+  font-family: var(--font-display);
+  font-size: var(--t-h1);
+  font-weight: var(--w-bold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--track-heading);
+  color: var(--ink);
+  margin: 0;
+}
+.idn h2, .idn-h2 {
+  font-family: var(--font-display);
+  font-size: var(--t-h2);
+  font-weight: var(--w-bold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--track-heading);
+  color: var(--ink);
+  margin: 0;
+}
+.idn h3, .idn-h3 {
+  font-family: var(--font-display);
+  font-size: var(--t-h3);
+  font-weight: var(--w-semibold);
+  line-height: 1.3;
+  color: var(--slate);
+  margin: 0;
+}
+.idn-display {
+  font-family: var(--font-display);
+  font-size: var(--t-display-1);
+  font-weight: var(--w-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--track-display);
+  color: var(--ink);
+}
+.idn p, .idn-body {
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  color: var(--fg1);
+  margin: 0 0 1em;
+  text-wrap: pretty;
+}
+.idn-body-sm { font-size: var(--t-body-sm); line-height: 1.55; color: var(--fg2); }
+.idn-caption { font-size: var(--t-caption); color: var(--fg2); }
+
+/* Overline / eyebrow — the brand's signature slab label */
+.idn-overline {
+  font-family: var(--font-slab);
+  font-size: var(--t-overline);
+  font-weight: var(--w-medium);
+  letter-spacing: var(--track-overline);
+  text-transform: uppercase;
+  color: var(--idn-blue);
+}
+
+/* Numeric callout — proof-point stats use slab tabular figures */
+.idn-stat {
+  font-family: var(--font-slab);
+  font-weight: var(--w-bold);
+  color: var(--idn-blue);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+a.idn-link, .idn a { color: var(--idn-blue); text-decoration: none; }
+.idn a:hover { color: var(--idn-blue-700); text-decoration: underline; text-underline-offset: 2px; }

@@ -1,0 +1,26 @@
+<!doctype html>
+<!-- @dsCard group="Components" name="Form Inputs" subtitle="Default, focus, error states" viewport="700x210" -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  body { background: var(--cloud); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .field label { font-family: var(--font-slab); font-size: 9.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--gray); display:block; margin-bottom: 7px; }
+  .input { width: 100%; font-family: var(--font-body); font-size: 14px; color: var(--ink); background: #fff; border: 1.5px solid var(--line); border-radius: var(--r-sm); padding: 11px 13px; }
+  .input::placeholder { color: var(--fg3); }
+  .input.focus { border-color: var(--idn-blue); box-shadow: var(--shadow-focus); outline: none; }
+  .hint { font-size: 11px; color: var(--gray); margin-top: 6px; }
+  .err { border-color: var(--danger); }
+  .err-msg { font-size: 11px; color: var(--danger); margin-top: 6px; }
+  .full { grid-column: 1 / -1; }
+</style></head>
+<body><div class="card">
+  <p class="card-eyebrow">Components · Form inputs</p>
+  <div class="grid">
+    <div class="field"><label>Business name</label><input class="input" value="Lakeshore Manufacturing"></div>
+    <div class="field"><label>Work email</label><input class="input focus" placeholder="you@company.com"><div class="hint">Focus · 3px signal-blue ring</div></div>
+    <div class="field"><label>Phone</label><input class="input err" value="555-12"><div class="err-msg">Enter a 10-digit number</div></div>
+    <div class="field"><label>Employees</label><input class="input" placeholder="Select…"></div>
+  </div>
+</div></body></html>

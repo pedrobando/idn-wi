@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- @dsCard group="Brand" name="Iconography" subtitle="Lucide line set, 1.6px stroke" viewport="700x255" -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .icons { display: grid; grid-template-columns: repeat(8, 1fr); gap: 10px; }
+  .ic { border: 1px solid var(--line); border-radius: var(--r-md); padding: 16px 8px 11px; text-align: center; background: #fff; }
+  .ic i { color: var(--idn-blue-700); }
+  .ic svg { width: 26px; height: 26px; stroke-width: 1.6; }
+  .ic .nm { display: block; margin-top: 9px; font-family: var(--font-slab); font-size: 8.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--gray); }
+  .note { font-size: 11px; color: var(--gray); margin: 14px 0 0; }
+</style></head>
+<body><div class="card">
+  <p class="card-eyebrow">Brand · Iconography — Lucide, 1.6px stroke</p>
+  <div class="icons">
+    <div class="ic"><i data-lucide="shield-check"></i><span class="nm">Security</span></div>
+    <div class="ic"><i data-lucide="server"></i><span class="nm">Servers</span></div>
+    <div class="ic"><i data-lucide="cloud"></i><span class="nm">Cloud</span></div>
+    <div class="ic"><i data-lucide="network"></i><span class="nm">Network</span></div>
+    <div class="ic"><i data-lucide="headset"></i><span class="nm">Support</span></div>
+    <div class="ic"><i data-lucide="phone"></i><span class="nm">VoIP</span></div>
+    <div class="ic"><i data-lucide="cable"></i><span class="nm">Cabling</span></div>
+    <div class="ic"><i data-lucide="cctv"></i><span class="nm">Cameras</span></div>
+    <div class="ic"><i data-lucide="lock"></i><span class="nm">Access</span></div>
+    <div class="ic"><i data-lucide="wifi"></i><span class="nm">Wireless</span></div>
+    <div class="ic"><i data-lucide="monitor"></i><span class="nm">Workplace</span></div>
+    <div class="ic"><i data-lucide="globe"></i><span class="nm">Web</span></div>
+    <div class="ic"><i data-lucide="map-pin"></i><span class="nm">Local</span></div>
+    <div class="ic"><i data-lucide="badge-check"></i><span class="nm">Certified</span></div>
+    <div class="ic"><i data-lucide="users"></i><span class="nm">Team</span></div>
+    <div class="ic"><i data-lucide="life-buoy"></i><span class="nm">Helpdesk</span></div>
+  </div>
+  <p class="note">Single weight · rounded joins · deep-blue or slate. No emoji, no filled/line mixing.</p>
+</div>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+</body></html>

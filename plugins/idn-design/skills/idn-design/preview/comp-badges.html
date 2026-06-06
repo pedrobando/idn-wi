@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- @dsCard group="Components" name="Badges & Status Pills" subtitle="Brand badges and status pills" viewport="700x195" -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .grp { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom: 16px; }
+  .grp:last-child { margin-bottom: 0; }
+  .lab { font-family: var(--font-slab); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: var(--gray); display:block; margin: 0 0 8px; }
+  .badge { font-family: var(--font-slab); font-size: 11px; letter-spacing: .03em; padding: 5px 12px; border-radius: 999px; font-weight: 500; display:inline-flex; align-items:center; gap:6px; }
+  .b-blue { background: var(--idn-blue-100); color: var(--idn-blue-700); }
+  .b-sky { background: var(--idn-sky-100); color: var(--idn-sky-700); }
+  .b-navy { background: var(--slate); color: #fff; }
+  .b-outline { border: 1.5px solid var(--mist); color: var(--idn-blue-700); }
+  .dot { width: 7px; height: 7px; border-radius: 999px; }
+  .st { font-family: var(--font-body); font-size: 12px; font-weight: 600; padding: 4px 11px 4px 9px; border-radius: 999px; display:inline-flex; align-items:center; gap:7px; }
+  .st-up { background: var(--success-100); color: #157a42; }
+  .st-warn { background: var(--warning-100); color: #9a6b15; }
+  .st-down { background: var(--danger-100); color: #a72f23; }
+</style></head>
+<body><div class="card">
+  <p class="card-eyebrow">Components · Badges & status pills</p>
+  <span class="lab">Brand badges</span>
+  <div class="grp">
+    <span class="badge b-blue">Managed IT</span>
+    <span class="badge b-sky">Cybersecurity</span>
+    <span class="badge b-navy">Veteran-Owned</span>
+    <span class="badge b-outline">Since 2004</span>
+    <span class="badge b-blue">MBE · DVB Certified</span>
+  </div>
+  <span class="lab">Status</span>
+  <div class="grp">
+    <span class="st st-up"><span class="dot" style="background:#1F9D57"></span>All systems online</span>
+    <span class="st st-warn"><span class="dot" style="background:#E0A030"></span>SLA nearing</span>
+    <span class="st st-down"><span class="dot" style="background:#CF4334"></span>Incident open</span>
+  </div>
+</div></body></html>

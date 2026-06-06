@@ -1,0 +1,10 @@
+{
+  "name": "idn-design",
+  "displayName": "IDN Design System",
+  "description": "IDN (Innovative Dynamic Networks) brand & design system: voice, color/type tokens, fonts, logos, icons, a WCAG-verified quality rubric, and a React UI kit. Auto-loads for IDN landing pages, UI, images, and slide decks.",
+  "author": {
+    "name": "Innovative Dynamic Networks"
+  },
+  "license": "MIT",
+  "keywords": ["idn", "design-system", "branding", "marketing", "ui", "accessibility"]
+}

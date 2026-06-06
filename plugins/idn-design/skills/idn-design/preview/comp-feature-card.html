@@ -1,0 +1,48 @@
+<!doctype html>
+<!-- @dsCard group="Components" name="Feature Card" subtitle="Signature card — gradient rule, icon chip, stats" viewport="700x345" -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  body { background: var(--cloud); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .fc { background: #fff; border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-sm); }
+  .fc .top { height: 6px; background: var(--gradient-brand); }
+  .fc.t .top { background: var(--gradient-sky); }
+  .fc .body { padding: 20px; }
+  .ico { width: 44px; height: 44px; border-radius: 10px; background: rgba(21,103,168,0.10); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; color: var(--idn-blue); }
+  .fc.t .ico { background: rgba(34,147,224,0.12); color: var(--idn-sky-700); }
+  .ico svg { width: 23px; height: 23px; stroke-width: 1.6; }
+  .fc h3 { font-family: var(--font-display); margin: 0 0 5px; font-size: 17px; font-weight: 700; color: var(--ink); }
+  .fc p { margin: 0 0 15px; font-size: 13px; color: var(--gray); line-height: 1.5; }
+  .stat { display: flex; gap: 22px; border-top: 1px solid var(--line); padding-top: 14px; }
+  .stat b { font-family: var(--font-slab); display: block; font-size: 21px; color: var(--idn-blue); font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+  .fc.t .stat b { color: var(--idn-sky-700); }
+  .stat span { font-family: var(--font-slab); font-size: 9px; text-transform: uppercase; letter-spacing: .06em; color: var(--gray); margin-top: 5px; display:block; }
+</style></head>
+<body><div class="card">
+  <p class="card-eyebrow">Components · Feature card (signature)</p>
+  <div class="grid">
+    <div class="fc">
+      <div class="top"></div>
+      <div class="body">
+        <div class="ico"><i data-lucide="shield-check"></i></div>
+        <h3>Proactive managed IT</h3>
+        <p>24/7 monitoring and a certified team that resolves issues before they reach your desk.</p>
+        <div class="stat"><div><b>10-min</b><span>Response SLA</span></div><div><b>1,000+</b><span>Clients</span></div></div>
+      </div>
+    </div>
+    <div class="fc t">
+      <div class="top"></div>
+      <div class="body">
+        <div class="ico"><i data-lucide="lock"></i></div>
+        <h3>Cybersecurity</h3>
+        <p>Layered protection, monitoring, and response — sized to your business, not an enterprise budget.</p>
+        <div class="stat"><div><b>35+</b><span>Yrs experience</span></div><div><b>DVB</b><span>· MBE certified</span></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+</body></html>

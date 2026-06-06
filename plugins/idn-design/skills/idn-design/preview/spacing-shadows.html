@@ -1,0 +1,22 @@
+<!doctype html>
+<!-- @dsCard group="Spacing" name="Elevation" subtitle="Cool navy-tinted shadow system" viewport="700x195" -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  body { background: var(--cloud); }
+  .grid { display: flex; gap: 22px; }
+  .item { text-align: center; }
+  .box { width: 120px; height: 78px; background: #fff; border-radius: var(--r-md); }
+  .nm { font-size: 12px; font-weight: 700; color: var(--ink); margin-top: 16px; }
+  .vl { font-family: var(--font-slab); font-size: 10px; color: var(--gray); margin-top: 3px; line-height: 1.4; }
+</style></head>
+<body><div class="card">
+  <p class="card-eyebrow">Elevation — cool navy-tinted shadows</p>
+  <div class="grid">
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-xs)"></div><div class="nm">xs</div><div class="vl">resting hairline</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-sm)"></div><div class="nm">sm</div><div class="vl">cards at rest</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-md)"></div><div class="nm">md</div><div class="vl">card hover</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-lg)"></div><div class="nm">lg</div><div class="vl">modal · popover</div></div>
+  </div>
+</div></body></html>

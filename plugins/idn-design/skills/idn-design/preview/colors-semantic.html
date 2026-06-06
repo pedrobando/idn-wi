@@ -1,0 +1,26 @@
+<!doctype html>
+<!-- @dsCard group="Colors" name="Semantic / Status" subtitle="Success, warning, danger, info" viewport="700x180" -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .rows { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .s { border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
+  .s .bar { height: 8px; }
+  .s .body { padding: 11px 13px 13px; }
+  .s .chip { display: inline-flex; align-items: center; gap: 7px; }
+  .s .dot { width: 12px; height: 12px; border-radius: 999px; }
+  .s .nm { font-size: 13px; font-weight: 700; color: var(--ink); }
+  .s .hx { font-family: var(--font-slab); font-size: 10.5px; color: var(--gray); display: block; margin-top: 5px; }
+  .s .use { font-size: 11px; color: var(--gray); display: block; margin-top: 5px; line-height: 1.4; }
+  .pill { display:inline-block; margin-top:8px; font-family: var(--font-slab); font-size:10px; letter-spacing:.04em; text-transform:uppercase; padding:3px 8px; border-radius:999px; }
+</style></head>
+<body><div class="card">
+  <p class="card-eyebrow">Semantic · Status colors</p>
+  <div class="rows">
+    <div class="s"><div class="bar" style="background:#1F9D57"></div><div class="body"><span class="chip"><span class="dot" style="background:#1F9D57"></span><span class="nm">Success</span></span><span class="hx">#1F9D57</span><span class="pill" style="background:#E4F4EB;color:#157a42">Online · Resolved</span></div></div>
+    <div class="s"><div class="bar" style="background:#E0A030"></div><div class="body"><span class="chip"><span class="dot" style="background:#E0A030"></span><span class="nm">Warning</span></span><span class="hx">#E0A030</span><span class="pill" style="background:#FBF1DD;color:#9a6b15">SLA nearing</span></div></div>
+    <div class="s"><div class="bar" style="background:#CF4334"></div><div class="body"><span class="chip"><span class="dot" style="background:#CF4334"></span><span class="nm">Danger</span></span><span class="hx">#CF4334</span><span class="pill" style="background:#FBE7E5;color:#a72f23">Down · Critical</span></div></div>
+    <div class="s"><div class="bar" style="background:#1567A8"></div><div class="body"><span class="chip"><span class="dot" style="background:#1567A8"></span><span class="nm">Info</span></span><span class="hx">#1567A8</span><span class="pill" style="background:#E7F1F9;color:#0E4E82">= IDN Blue</span></div></div>
+  </div>
+</div></body></html>

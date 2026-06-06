@@ -1,0 +1,24 @@
+/* Shared base for Design System preview cards.
+   Each card links ../colors_and_type.css then this file. */
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: var(--font-body);
+  color: var(--fg1);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.card { padding: 22px 24px; width: 700px; }
+.card-eyebrow {
+  font-family: var(--font-slab);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--idn-blue);
+  font-weight: 500;
+  margin: 0 0 14px;
+}
+.mono { font-family: var(--font-slab); font-variant-numeric: tabular-nums; }
+.row { display: flex; gap: 14px; }
+.col { display: flex; flex-direction: column; }

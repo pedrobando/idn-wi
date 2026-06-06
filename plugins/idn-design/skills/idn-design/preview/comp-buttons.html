@@ -1,0 +1,34 @@
+<!doctype html>
+<!-- @dsCard group="Components" name="Buttons" subtitle="Primary, teal, dark, ghost + states" viewport="700x200" -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .btn { font-family: var(--font-display); font-size: 14px; font-weight: 600; border-radius: var(--r-sm); padding: 11px 20px; border: 1.5px solid transparent; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; line-height: 1; }
+  .btn svg { width: 16px; height: 16px; }
+  .primary { background: var(--idn-blue); color: #fff; }
+  .primary.hover { background: var(--idn-blue-700); }
+  .sky { background: var(--idn-sky-700); color: #fff; }
+  .dark { background: var(--slate); color: #fff; }
+  .ghost { background: transparent; color: var(--idn-blue); border-color: var(--mist); }
+  .ghost.hover { border-color: var(--idn-blue); }
+  .lab { font-family: var(--font-slab); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: var(--gray); display:block; margin: 0 0 8px; }
+  .grp { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom: 16px; }
+  .grp:last-child{ margin-bottom:0; }
+</style></head>
+<body><div class="card">
+  <p class="card-eyebrow">Components · Buttons</p>
+  <span class="lab">Default</span>
+  <div class="grp">
+    <button class="btn primary">Get a free assessment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    <button class="btn sky">Talk to a real person</button>
+    <button class="btn dark">Contact support</button>
+    <button class="btn ghost">Learn more</button>
+  </div>
+  <span class="lab">Hover state</span>
+  <div class="grp">
+    <button class="btn primary hover">Get a free assessment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    <button class="btn ghost hover">Learn more</button>
+    <span style="font-size:11px;color:var(--gray)">→ deepen the hue · press adds scale(0.98)</span>
+  </div>
+</div></body></html>

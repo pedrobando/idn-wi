@@ -1,0 +1,25 @@
+<!doctype html>
+<!-- @dsCard group="Components" name="Stat Band" subtitle="Proof-point band on navy" viewport="700x190" -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .band { background: var(--gradient-ink); border-radius: var(--r-md); padding: 26px 28px; position: relative; overflow: hidden; }
+  .band::after { content:""; position:absolute; top:-40%; right:-10%; width:300px; height:200px; background: radial-gradient(closest-side, rgba(46,139,208,0.30), transparent 70%); pointer-events:none; }
+  .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; position: relative; }
+  .stat b { font-family: var(--font-slab); display: block; font-size: 30px; color: #fff; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+  .stat b .u { color: var(--idn-sky-300); }
+  .stat span { font-family: var(--font-slab); font-size: 9px; text-transform: uppercase; letter-spacing: .07em; color: var(--mist); margin-top: 8px; display:block; line-height: 1.4; }
+</style></head>
+<body><div class="card">
+  <p class="card-eyebrow">Components · Proof-point stat band (on navy)</p>
+  <div class="band">
+    <div class="grid">
+      <div class="stat"><b>1,000<span class="u">+</span></b><span>Clients served</span></div>
+      <div class="stat"><b>10<span class="u">-min</span></b><span>Response SLA</span></div>
+      <div class="stat"><b>35<span class="u">+</span></b><span>Yrs combined exp.</span></div>
+      <div class="stat"><b>3</b><span>Locations · nationwide cabling</span></div>
+      <div class="stat"><b>2004</b><span>Veteran &amp; minority owned</span></div>
+    </div>
+  </div>
+</div></body></html>

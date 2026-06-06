@@ -1,0 +1,16 @@
+{
+  "name": "idn-marketplace",
+  "description": "IDN (Innovative Dynamic Networks) brand & design system for Claude Code.",
+  "owner": {
+    "name": "Innovative Dynamic Networks"
+  },
+  "plugins": [
+    {
+      "name": "idn-design",
+      "source": "./plugins/idn-design",
+      "description": "IDN brand system — auto-loads when crafting IDN landing pages, UI, images, or slide decks. Ships brand voice, color/type tokens, fonts, logos, Lucide icons, a WCAG-verified quality rubric, and a high-fidelity React UI kit.",
+      "category": "design",
+      "tags": ["design-system", "branding", "ui", "marketing", "accessibility"]
+    }
+  ]
+}

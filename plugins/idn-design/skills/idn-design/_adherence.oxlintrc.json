@@ -1,0 +1,223 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "ui_kits/website/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Cabin|Roboto Slab))/i]",
+        "message": "Font not provided by the design system. Available: Cabin, Roboto Slab."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {},
+    "tokens": [
+      "--accent",
+      "--accent-2",
+      "--bg",
+      "--bg-inverse",
+      "--bg-subtle",
+      "--border",
+      "--border-strong",
+      "--cloud",
+      "--danger",
+      "--danger-100",
+      "--fg-on-dark",
+      "--fg-on-dark-2",
+      "--fg1",
+      "--fg2",
+      "--fg3",
+      "--font-body",
+      "--font-display",
+      "--font-slab",
+      "--gradient-brand",
+      "--gradient-ink",
+      "--gradient-sky",
+      "--gray",
+      "--idn-blue",
+      "--idn-blue-100",
+      "--idn-blue-300",
+      "--idn-blue-700",
+      "--idn-sky",
+      "--idn-sky-100",
+      "--idn-sky-300",
+      "--idn-sky-700",
+      "--info",
+      "--ink",
+      "--lh-body",
+      "--lh-snug",
+      "--lh-tight",
+      "--line",
+      "--mist",
+      "--r-lg",
+      "--r-md",
+      "--r-pill",
+      "--r-sm",
+      "--r-xs",
+      "--shadow-focus",
+      "--shadow-lg",
+      "--shadow-md",
+      "--shadow-sm",
+      "--shadow-xs",
+      "--slate",
+      "--space-1",
+      "--space-2",
+      "--space-3",
+      "--space-4",
+      "--space-5",
+      "--space-6",
+      "--space-7",
+      "--space-8",
+      "--space-9",
+      "--success",
+      "--success-100",
+      "--t-body",
+      "--t-body-lg",
+      "--t-body-sm",
+      "--t-caption",
+      "--t-display-1",
+      "--t-display-2",
+      "--t-h1",
+      "--t-h2",
+      "--t-h3",
+      "--t-h4",
+      "--t-overline",
+      "--track-display",
+      "--track-heading",
+      "--track-overline",
+      "--w-bold",
+      "--w-medium",
+      "--w-regular",
+      "--w-semibold",
+      "--warning",
+      "--warning-100",
+      "--white"
+    ],
+    "tokenKinds": {
+      "--idn-blue": "color",
+      "--idn-blue-700": "color",
+      "--idn-blue-300": "color",
+      "--idn-blue-100": "color",
+      "--idn-sky": "color",
+      "--idn-sky-700": "color",
+      "--idn-sky-300": "color",
+      "--idn-sky-100": "color",
+      "--ink": "color",
+      "--slate": "color",
+      "--gray": "color",
+      "--mist": "color",
+      "--line": "color",
+      "--cloud": "color",
+      "--white": "color",
+      "--success": "color",
+      "--success-100": "color",
+      "--warning": "color",
+      "--warning-100": "color",
+      "--danger": "color",
+      "--danger-100": "color",
+      "--info": "color",
+      "--bg": "color",
+      "--bg-subtle": "color",
+      "--bg-inverse": "color",
+      "--fg1": "color",
+      "--fg2": "color",
+      "--fg3": "color",
+      "--fg-on-dark": "color",
+      "--fg-on-dark-2": "color",
+      "--accent": "color",
+      "--accent-2": "color",
+      "--border": "color",
+      "--border-strong": "color",
+      "--font-display": "font",
+      "--font-body": "font",
+      "--font-slab": "font",
+      "--t-display-1": "spacing",
+      "--t-display-2": "spacing",
+      "--t-h1": "spacing",
+      "--t-h2": "spacing",
+      "--t-h3": "spacing",
+      "--t-h4": "spacing",
+      "--t-body-lg": "spacing",
+      "--t-body": "spacing",
+      "--t-body-sm": "spacing",
+      "--t-caption": "spacing",
+      "--t-overline": "spacing",
+      "--lh-tight": "other",
+      "--lh-snug": "other",
+      "--lh-body": "other",
+      "--w-regular": "other",
+      "--w-medium": "other",
+      "--w-semibold": "other",
+      "--w-bold": "other",
+      "--track-display": "spacing",
+      "--track-heading": "spacing",
+      "--track-overline": "spacing",
+      "--r-xs": "spacing",
+      "--r-sm": "spacing",
+      "--r-md": "spacing",
+      "--r-lg": "spacing",
+      "--r-pill": "spacing",
+      "--shadow-xs": "shadow",
+      "--shadow-sm": "shadow",
+      "--shadow-md": "shadow",
+      "--shadow-lg": "shadow",
+      "--shadow-focus": "shadow",
+      "--space-1": "spacing",
+      "--space-2": "spacing",
+      "--space-3": "spacing",
+      "--space-4": "spacing",
+      "--space-5": "spacing",
+      "--space-6": "spacing",
+      "--space-7": "spacing",
+      "--space-8": "spacing",
+      "--space-9": "spacing",
+      "--gradient-brand": "color",
+      "--gradient-sky": "color",
+      "--gradient-ink": "color"
+    },
+    "fontFamilies": [
+      "Cabin",
+      "Roboto Slab"
+    ]
+  }
+}
