@@ -6,12 +6,10 @@ This repo is **both** the marketplace and the plugin.
 
 ## Install
 
-> Replace `OWNER/idn-design-system` with this repo's actual GitHub path.
-
 In Claude Code:
 
 ```
-/plugin marketplace add OWNER/idn-design-system
+/plugin marketplace add pedrobando/idn-wi
 /plugin install idn-design@idn-marketplace
 ```
 
